@@ -134,6 +134,15 @@ cf4. iOS 개발 디자인 패턴
 - view 는 presenter 에서 어떻게 보여줘야 할지 요청대로 디스플레이하고 입력 받으면 presenter에 전달
 - router 는 화면 전환 담당 (navigation information), 어떻게 view 를 전환할지 알고 있음
 
+4) Delegate pattern
+- 처리해야 할 일 중 일부를 다른 객체에 넘기는 것
+- GUI 기반 프로그래밍에서 일반적으로 사용되는 패턴 (ex) 이벤트 리스너 event listener
+- 이벤트 캐치
+- 기능을 처리할 객체를 델리게이트로 설정
+- 특정 이벤트가 발생할 때 본래의 객체로 전달
+- 델리게이트 패턴을 사용하는 모든 객체는 델리게이트 메소드를 정의한 프로토콜을 가짐
+- 따라서 델리게이트 메소드를 이용하려면 델리게이트 프로토콜을 구현하는 과정이 반드시 필요
+
 cf5. Collection - difference btw Set and Tuple
 - set은 같은 자료형, 중복 허용하지 않음, 내부적으로 hashable 프로토콜 구현 (고정 길이 데이터로 변환)
 - tuple은 여러가지 자료형을 저장할 수 있는 *상수*, 크기, 순회 불가
@@ -276,7 +285,6 @@ Provides the window and view architecture for implementing your interface
 - accessibility support 
 - app extension support 
 - resource management
-
 
 
 
